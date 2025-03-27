@@ -6,46 +6,91 @@
     <title>VIT Ethnus Assignment</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
+        /* Basic Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Styling for the main body */
         body {
             font-family: 'Roboto', sans-serif;
-            background-color: #e9ecef;
+            background: linear-gradient(135deg, #667eea, #764ba2); /* Modern gradient background */
             text-align: center;
-            margin: 0;
-            padding: 20px;
+            color: #ffffff; /* White text for readability against the background */
+            line-height: 1.6; /* Improved line height for readability */
+            padding: 40px 10px;
         }
+
+        /* Container settings */
         .container {
-            background: white;
+            background: rgba(255, 255, 255, 0.95); /* White background with slight opacity */
             max-width: 600px;
             margin: auto;
             padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            border-radius: 20px; /* Rounded corners for a softer look */
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); /* Deeper shadow for a floating effect */
+            transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions for interactivity */
         }
+
+        /* Hover effect for container */
+        .container:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Headings styles */
         h2, h3 {
-            color: #343a40;
-            margin-bottom: 15px;
+            color: #192a56; /* Darker color for contrast */
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.3); /* Subtle shadow for depth */
         }
+
+        /* Paragraph styles */
         p {
-            color: #495057;
-            margin: 10px 0;
+            color: #555; /* Slightly darker text for readability */
+            margin: 15px 0;
         }
+
+        /* Link/button styles */
         a {
             display: inline-block;
             padding: 12px 20px;
-            margin: 10px 0;
-            background: #007bff;
+            margin: 12px 0;
+            background: #6c63ff; /* Bright button color */
             color: white;
             text-decoration: none;
-            border-radius: 5px;
-            transition: background 0.3s, transform 0.3s;
-            font-weight: 500;
+            border-radius: 25px; /* More rounded edges for buttons */
+            transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+            font-weight: 600; /* Bolder text for better visibility */
+            font-size: 16px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
+
+        /* Button hover effect */
         a:hover {
-            background: #0056b3;
-            transform: translateY(-2px);
+            background: #575fcf; /* Slightly darker shade on hover */
+            transform: translateY(-2px); /* Lift effect for interaction */
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
         }
+
+        /* Button active state */
         a:active {
-            transform: translateY(0);
+            transform: translateY(0); /* Return to original position */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Responsive media queries */
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            a {
+                font-size: 14px; /* Smaller button text for smaller screens */
+                padding: 10px 18px; /* Reduced padding */
+            }
         }
     </style>
 </head>
@@ -89,7 +134,7 @@
         <a href="./Javascript_MERN/Task6.html" target="_blank">Task 6</a>
         <a href="./Javascript_MERN/Task7.html" target="_blank">Task 7</a>
         <a href="./Javascript_MERN/Task8.html" target="_blank">Task 8</a>
-        <a href="./Javascript_MERN/Task9.html" target ="_blank">Task 9</a>
+        <a href="./Javascript_MERN/Task9.html" target="_blank">Task 9</a>
     </div>
 </body>
 </html>
